@@ -15,6 +15,16 @@ enum PlanetType {
 	PURPLE 
 }
 
+enum Faction {
+	NONE,
+	PIRATE,
+	MACHINIST,
+	HIVE_MIND,
+	CULTIST
+}
+
+@export var planet_faction: Faction = Faction.NONE
+
 @export var planet_texture: PlanetType:
 	set(value):
 		planet_texture = value
