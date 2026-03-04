@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dsoo61wqauc4q"]
+
+[ext_resource type="Script" uid="uid://cmv55lb3him50" path="res://assets/scenes/camera_2d.gd" id="1_dntix"]
+[ext_resource type="PackedScene" uid="uid://dfex3m41dlpv5" path="res://assets/scenes/planet.tscn" id="2_7t3ur"]
+
+[node name="TestMap" type="Node2D" unique_id=1314116101]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=801152586]
+script = ExtResource("1_dntix")
+camera_speed = 10
+
+[node name="Planet" parent="." unique_id=1994372237 instance=ExtResource("2_7t3ur")]
+position = Vector2(100, 80)
+
+[node name="Planet2" parent="." unique_id=709217176 instance=ExtResource("2_7t3ur")]
+position = Vector2(910, 207)
+planet_texture = 10
+
+[node name="Planet3" parent="." unique_id=1498259180 instance=ExtResource("2_7t3ur")]
+position = Vector2(555, 518)
+planet_texture = 6
