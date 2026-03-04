@@ -1,11 +1,17 @@
 [gd_scene format=3 uid="uid://dfex3m41dlpv5"]
 
 [ext_resource type="Script" uid="uid://bd04h0stccvk3" path="res://planet.gd" id="1_sylqw"]
+[ext_resource type="Script" uid="uid://byw6eguq1we38" path="res://strategic_resources.gd" id="2_072hl"]
 [ext_resource type="Texture2D" uid="uid://bt5uam8y7t5sj" path="res://assets/sprites/planets/planet03.png" id="2_437ha"]
+
+[sub_resource type="Resource" id="Resource_072hl"]
+script = ExtResource("2_072hl")
+metadata/_custom_type_script = "uid://byw6eguq1we38"
 
 [node name="Planet" type="Node2D" unique_id=1994372237]
 script = ExtResource("1_sylqw")
 planet_texture = 2
+resource_production = SubResource("Resource_072hl")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=900922263]
 texture = ExtResource("2_437ha")

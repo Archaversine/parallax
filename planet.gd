@@ -23,12 +23,17 @@ enum Faction {
 	CULTIST
 }
 
+@export var planet_name: String
 @export var planet_faction: Faction = Faction.NONE
+@export var strategic_owner: Faction = Faction.NONE
 
 @export var planet_texture: PlanetType:
 	set(value):
 		planet_texture = value
 		update_texture()
+
+@export var population: int = 10
+@export var resource_production: StrategicResources = StrategicResources.new()
 
 @onready var sprite: Sprite2D = $Sprite2D
 
